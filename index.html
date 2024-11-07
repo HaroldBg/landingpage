@@ -1,0 +1,961 @@
+<!DOCTYPE html> 
+<html lang="en" >
+		<!--begin::Head-->
+	<head><base href="">
+		<title>AfriqueTec - Améliorer votre système d'information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+
+
+		<!--begin::Global Stylesheets Bundle(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body data-kt-name="metronic" id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
+		<!--begin::Theme mode setup on page load-->
+		<script>
+			if ( document.documentElement ) 
+			{ 	const defaultThemeMode = "light";
+				 const name = document.body.getAttribute("data-kt-name"); 
+				 let themeMode = localStorage.getItem("kt_" + ( name !== null ? name + "_" : "" ) + "theme_mode_value"); 
+				 if ( themeMode === null ) 
+				 { 
+					if ( defaultThemeMode === "light" ) 
+					{ 
+						themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; 
+					} else 
+					{ 
+						themeMode = defaultThemeMode; 
+					} 
+				} document.documentElement.setAttribute("data-theme", themeMode); 
+			}
+		</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::Main-->
+		<!--begin::Root-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Header Section-->
+			<div class="mb-0" id="home">
+				<!--begin::Wrapper-->
+				<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" style="background-image: url(assets/media/svg/illustrations/landing.svg)">
+					<!--begin::Header-->
+					<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+						<!--begin::Container-->
+						<div class="container">
+							<!--begin::Wrapper-->
+							<div class="d-flex align-items-center justify-content-between">
+								<!--begin::Logo-->
+								<div class="d-flex align-items-center flex-equal">
+									<!--begin::Mobile menu toggle-->
+									<button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
+										<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+										<span class="svg-icon svg-icon-2hx">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="currentColor" />
+												<path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</button>
+									<!--end::Mobile menu toggle-->
+									<!--begin::Logo image-->
+									<a href="#">
+										<!-- <img alt="Logo" src="assets/media/logos/landing.svg" class="logo-default h-25px h-lg-30px" /> -->
+										<img alt="Logo" src="assets/media/logos/afriquetec.png" class="logo-default h-50px h-lg-70px" />
+										<img alt="Logo" src="assets/media/logos/afriquetec.png" class="logo-sticky h-50px h-lg-70px" />
+									</a>
+									<!--end::Logo image-->
+								</div>
+								<!--end::Logo-->
+								<!--begin::Menu wrapper-->
+								<div class="d-lg-block" id="kt_header_nav_wrapper">
+									<div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+										<!--begin::Menu-->
+										<div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold" id="kt_landing_menu">
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Acceuil</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">À Propos</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Nos services</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Nous contacter</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="formation.html" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Nos Formations</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+										</div>
+										<!--end::Menu-->
+									</div>
+								</div>
+								<!--end::Menu wrapper-->
+								<!--begin::Toolbar-->
+								<div class="flex-equal text-end ms-1">
+									<!-- <a href="../../demo2/dist/authentication/layouts/basic/sign-in.html" class="btn btn-success">Sign In</a> -->
+								</div>
+							</div>
+							<!--end::Wrapper-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+					<!--begin::Landing hero-->
+					<div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+						<!--begin::Heading-->
+						<div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
+							<!--begin::Title-->
+							<h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-">Faire de votre système d'information 
+							<br />
+							<span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+								<span id="kt_landing_hero_text">Le meilleur possible.</span>
+							</span></h1>
+							<!--end::Title-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Clients-->
+						<div class="d-flex flex-center flex-wrap position-relative px-5">
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
+								<img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
+								<img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
+								<img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
+								<img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
+								<img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
+								<img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
+								<img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
+								<img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+						</div>
+						<!--end::Clients-->
+					</div>
+					<!--end::Landing hero-->
+				</div>
+				<!--end::Wrapper-->
+				<!--begin::Curve bottom-->
+				<div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve bottom-->
+			</div>
+			<!--end::Header Section-->
+			<!--begin::How It Works Section-->
+			<div class="mb-n10 mb-lg-n20 z-index-2">	
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Heading-->
+					<div class="text-center mb-17">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">À Propos </h3>
+						<!--end::Title-->
+						<!--begin::Text-->
+						<div class="fs-5 text-muted fw-bold">Notre équipe opère efficacement dans le domaine INFORMATIQUE depuis des années.
+							 Offrez-vous les services INFORMATIQUES efficaces et fiables.
+							  Dotez-vous d’un service informatique ou renforcez vos équipes en place.
+							   Nous vous procurons la meilleure qualité de service, d’expertise et de flexibilité.
+							    Avec AFRIQUETEC, votre informatique devient 100% disponible.</div>
+						<!--end::Text-->
+					</div>
+					<!--end::Heading-->
+					<!--begin::Row-->
+					<div class="row w-100 gy-10 mb-md-20">
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sigma-1/2.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<!-- <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span> -->
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-dark">Expert</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Laisser vos projets informatiques 
+								<br />dans la main des experts</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sigma-1/8.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<!-- <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span> -->
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-dark">Fiable</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">AFRIQUETEC une société à réputation fiable</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sigma-1/12.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<!-- <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span> -->
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-dark">Efficace</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Recevez satisfaction 
+								<br />du résultat de vos produits informatique délégués</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+					<!--begin::Product slider-->
+					<div class="tns tns-default">
+						
+						
+					</div>
+					<!--end::Product slider-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::How It Works Section-->
+			<!--begin::Statistics Section-->
+			<div class="mt-sm-n10">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="pb-15 pt-18 landing-dark-bg">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Heading-->
+						<div class="text-center mt-15 mb-18" id="achievements" data-kt-scroll-offset="{default: 100, lg: 150}">
+							<!--begin::Title-->
+							<h3 class="fs-2hx text-white fw-bold mb-5">Nous rendons les choses meilleures</h3>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="fs-5 text-gray-700 fw-bold">Offrez vous des services de qualités
+							et faites nous confiance <br> pour asurer vos formations.</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Statistics-->
+						<div class="d-flex flex-center">
+							<!--begin::Items-->
+							<div class="d-flex flex-wrap flex-center justify-content-lg-between mb-15 mx-auto w-xl-900px">
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<i class="fa-solid fa-face-smile  mb-3 " style="font-size: 40px;"></i>
+									<!--end::Svg Icon-->
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0 text-center">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="32" data-kt-countup-suffix="+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 text-center fw-semibold fs-5 lh-0">Clients Satisfaits</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<!--begin::Svg Icon | path: icons/duotune/graphs/gra008.svg-->
+									<i class="fa-solid fa-diagram-project mb-3 " style="font-size: 40px;"></i>
+									<!--end::Svg Icon-->
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0 text-center">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="40" data-kt-countup-suffix="+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 text-center fw-semibold fs-5 lh-0">Projets</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm002.svg-->
+									<i class="fa-solid fa-user-graduate mb-3 " style="font-size: 40px;"></i>
+									<!--end::Svg Icon-->
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0 text-center">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="120" data-kt-countup-suffix="+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 text-center fw-semibold fs-5 lh-0">Formations Réussies</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+							</div>
+							<!--end::Items-->
+						</div>
+						<!--end::Statistics-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+				<!--begin::Curve bottom-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve bottom-->
+			</div>
+			<!--end::Statistics Section-->
+			<!--begin::Team Section-->
+			<div class="py-10 py-lg-20">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Heading-->
+					<div class="text-center mb-12">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">Nos services</h3>
+						<!--end::Title-->
+						<!--begin::Sub-title-->
+						<div class="fs-5 text-muted fw-bold">Trouver votre chemin dans notre bibliothèque de services.</div>
+						<!--end::Sub-title=-->	
+					</div>
+					<!--end::Heading-->
+					<!--begin::Row-->
+					<div class="row g-10">
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/INFO.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold  text-dark text-uppercase lh-base">Sytème d'information</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Schéma Directeur Informatique, Charte d'utilisation du Système d'Information, Cartographie et Elaboration de votre Système d'Information avec des outils et des techniques d'expert, Conduite de vos projets de digitalisation.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/600x400/img-73.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Sécurité Informatique</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Mise en œuvre de moyens de sécurité évolués permettant de pondérer les risques et de répondre aux obligations règlementaires, Accompagnement et Veille perpétuelle sur les bonnes pratiques en matière de cyber-sécurité.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/logconc.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Conception Logiciel</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Conception et déploiement de Logiciels de Gestion , Applications (Sites Web, Intranet, Mobiles, Extranet, ecommerce, eCatalogue). Intégration de solutions métier et ERP, SaaS.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/INFOG.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Infogérence</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">L’infogérance AFRIQUETEC c’est l’assurance de disposer des moyens techniques et humains de qualité correspondant à vos besoins. L’infogérance AFRIQUETEC c’est également la mise à disposition d’un service informatique dédié à votre cœur de métier. Occupez-vous de votre cœur de métier, et laissez-nous assurer votre informatique.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/audit2.jpeg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Audit et Conseil</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">L'audit informatique chez AFRIQUETEC a pour objectif d'identifier et d'évaluer les risques (opérationnels, financiers et de réputation) associés aux activités informatiques de votre entreprise ou de votre administration. Nous attirons l'attention des Directeurs sur les risques encourus par leurs institutions et prodiguons des conseils pour les endiguer.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/reseau.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Enquetes Statiques</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Nous utilisons une méthode particulière et éprouvée de recueil de l’information (Objectif, champ, unités) ainsi que des méthodes de collecte efficaces (en face à face, par téléphone, par plateformes sécurisées internet ou mobile). Nous constituons pour vous votre échantillon et réalisons également vos outils de collecte de données. Nous vous aidons à analyser puis créer vos bases de données puis à les fiabiliser et à les sécuriser.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/formation.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Formation</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Nous allons dans la même direction que vous 
+										Avez-vous un besoin en terme de formations informatiques (Langage de programmation, Analyse Informatique, Réseaux Informatiques, Développement d'Applications , Conception de Sites web, Base de données, Bureautique...) ? Nous avons une réponse en termes de formations pour vous et pour toute votre équipe.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/learning.jpeg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Plateforme self-training</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Nous allons déployer pour vous une plateforme permettant à vos apprenants et à vos employés de s'auto-former sur des contenus préalablement mis en ligne.
+										Accédez à des centaines de contenus depuis n'importe quel support Le self learning et l'autonomie encouragés .Développer vos compétences au quotidien, suivez vos progrès et créer une véritable bibliothèque .Échangez entre collègues et apprenants</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4">
+							<!--begin::Publications post-->
+							<div class="card-xl-stretch me-md-6">
+								<!--begin::Overlay-->
+								<span class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" >
+									<!--begin::Image-->
+									<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('assets/media/stock/africtec/datacenter.jpg')"></div>
+									<!--end::Image-->
+								</span>
+								<!--end::Overlay-->
+								<!--begin::Body-->
+								<div class="m-0">
+									<!--begin::Title-->
+									<span  class="fs-4 text-dark fw-bold text-uppercase text-dark lh-base">Datacenter</span>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<div class="fw-semibold fs-5 text-gray-600 text-dark mt-3 mb-5">Votre Datacenter ou salle informatique est l'endroit où sont installées vos nombreuses machines (racks, serveurs, équipements réseaux, systèmes de sécurité physique, systèmes d'aération et bien d'autres) et contenant vos données informatiques. Sa criticité exige de bien le penser : nous sommes là à vos côtés pour relever ensemble ce défi.</div>
+									<!--end::Text-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Publications post-->
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Team Section-->
+			<!--begin::Projects Section-->
+			<div class="mb-lg-n15 position-relative z-index-2">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Card-->
+					<div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
+						<!--begin::Card body-->
+						<div class="card-body p-lg-20">
+							<!--begin::Heading-->
+							<div class="text-center mb-5 mb-lg-10">
+								<!--begin::Title-->
+								<h3 class="fs-2hx text-dark mb-5" id="portfolio" data-kt-scroll-offset="{default: 100, lg: 150}">Nous Contactez</h3>
+								<!--end::Title-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Row-->
+							<div class="row mb-3">
+								<!--begin::Col-->
+								<div class="col-md-6 pe-lg-10">
+									<!--begin::Map-->
+									<div class="w-100 rounded mb-2 mb-lg-0 mt-2 d-flex flex-column justify-content-between" style="height: 486px">
+										<!--begin::Phone-->
+										<div class="text-center bg-light card-rounded d-flex flex-column justify-content-center p-10 ">
+											<!--begin::Icon-->
+											<!--SVG file not found: icons/duotune/finance/fin006.svgPhone.svg-->
+											<i class="fa-solid fa-phone fs-1"></i>
+											<!--end::Icon-->
+											<!--begin::Subtitle-->
+											<h3 class="text-dark fw-bold my-5">Contacts</h3>
+											<!--end::Subtitle-->
+											<!--begin::Number-->
+											<!-- <div class="text-gray-700 fw-semibold fs-4">1 (833) 597-7538</div> -->
+											<span class="text-gray-700 fw-semibold fs-4">Fixe : <a href="tel:+229 21 15 95 16"  class="text-gray-700 fw-semibold fs-4">+229 21 15 95 16</a></span>
+											<span class="text-gray-700 fw-semibold fs-4">Mobile : <a href="tel:+229 97 95 08 81"  class="text-gray-700 fw-semibold fs-4">+229 97 95 08 81</a></span>
+											<!--end::Number-->
+										</div>
+										<!--end::Phone-->
+										<!--begin::Address-->
+										<div class="text-center bg-light card-rounded d-flex flex-column justify-content-center p-10 ">
+												<!--begin::Icon-->
+												<!--begin::Svg Icon | path: icons/duotune/general/gen018.svg-->
+												<!-- <i class="fas fa-mailbox" style="font-size: 40px;"></i> -->
+												<i class="bi bi-mailbox" style="font-size: 45px;"></i>
+												<!--end::Svg Icon-->
+												<!--end::Icon-->
+												<!--begin::Subtitle-->
+												<h3 class="text-dark fw-bold my-5">Notre Boite Postale</h3>
+												<!--end::Subtitle-->
+												<!--begin::Description-->
+												<div class="text-gray-700 fs-6 fw-semibold">08 BP 1116Tri Postal,Cotonou,Bénin</div>
+												<!--end::Description-->
+										</div>
+										<!--end::Address-->
+									</div>
+									<!--end::Map-->
+										
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-md-6 ps-lg-10">
+									<!--begin::Form-->
+									<form action="" class="form mb-15" method="post" id="kt_contact_form">
+										<h1 class="fw-bold text-dark text-center mt-3 mb-9">Envoyer Nous un mail</h1>
+										<!--begin::Input group-->
+										<div class="row mb-5">
+											<!--begin::Col-->
+											<div class="col-md-6 fv-row">
+												<!--begin::Label-->
+												<label class="fs-5 text-end fw-semibold mb-2">Nom</label>
+												<!--end::Label-->
+												<!--begin::Input-->
+												<input type="text" class="form-control form-control-solid" placeholder="" name="name" />
+												<!--end::Input-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-md-6 fv-row">
+												<!--end::Label-->
+												<label class="fs-5 text-end fw-semibold mb-2">Email</label>
+												<!--end::Label-->
+												<!--end::Input-->
+												<input type="text" class="form-control form-control-solid" placeholder="" name="email" />
+												<!--end::Input-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="d-flex flex-column mb-5 fv-row">
+											<!--begin::Label-->
+											<label class="fs-5  fw-semibold mb-2">Sujet</label>
+											<!--end::Label-->
+											<!--begin::Input-->
+											<input class="form-control form-control-solid" placeholder="" name="subject" />
+											<!--end::Input-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="d-flex flex-column mb-10 fv-row">
+											<label class="fs-6  fw-semibold mb-2">Message</label>
+											<textarea class="form-control form-control-solid" rows="6" name="message" placeholder=""></textarea>
+										</div>
+										<!--end::Input group-->
+										<!--begin::Submit-->
+										<button type="submit" class="btn  btn-primary" id="kt_contact_submit_button">
+											<!--begin::Indicator label-->
+											<span class="indicator-label">Envoyer</span>
+											<!--end::Indicator label-->
+											<!--begin::Indicator progress-->
+											<span class="indicator-progress">Veuillez Patienter...
+											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+											<!--end::Indicator progress-->
+										</button>
+										<!--end::Submit-->
+									</form>
+									<!--end::Form-->
+								</div>
+								<!--end::Col-->
+							</div>
+							<!--end::Row-->
+						</div>
+						<!--end::Card body-->
+					</div>
+					<!--end::Card-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Projects Section-->
+			<!--begin::Footer Section-->
+			<div class="mb-0">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="landing-dark-bg pt-20">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Row-->
+						<div class="row py-10 py-lg-20">
+							<!--begin::Col-->
+							<div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+								<!--begin::Block-->
+								<div class="rounded landing-dark-border p-9 mb-10">
+									<!--begin::Title-->
+									<h2 class="text-white">Besoin de plus d'information?</h2>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<span class="fw-normal fs-4 text-gray-700">Ecrivez-Nous à
+									<a href="mailto:info@afriquetec.org"  class="text-white opacity-50 text-hover-primary">info@afriquetec.org</a></span>
+									<!--end::Text-->
+								</div>
+								<!--end::Block-->
+							</div>
+							<!--end::Col-->
+							<!--begin::Col-->
+							<div class="col-lg-6 ps-lg-16">
+								<!--begin::Navs-->
+								<div class="d-flex justify-content-center">
+									<!--begin::Links-->
+									<div class="d-flex fw-semibold flex-column ms-lg-20">
+										<!--begin::Subtitle-->
+										<h4 class="fw-bold text-gray-400 mb-6">Restez Connecter</h4>
+										<!--end::Subtitle-->
+										<!--begin::Link-->
+										<a href="https://web.facebook.com/Afriquetec-SARL-105571954386954/?ref=search&__tn__=%2Cd%2CP-R&eid=ARCerTY-4xJcBB9ycFNm1hIgxibO_jc3OCJ-1ZoTFw_n5X-ufni69LtRopm1P6z2H3w2gbp_v2BTs5w6" class="mb-6">
+											<img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<!-- <a href="https://github.com/KeenthemesHub" class="mb-6">
+											<img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>
+										</a> -->
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://www.linkedin.com/in/vhouzanme" class="mb-6">
+											<img src="assets/media/svg/brand-logos/linkedin-2.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">LinkdIn</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://api.whatsapp.com/send?phone=22997950881" class="mb-6">
+											<img src="assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">whatsapp</span>
+										</a>
+										<!--end::Link-->
+									</div>
+									<!--end::Links-->
+								</div>
+								<!--end::Navs-->
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Row-->
+					</div>
+					<!--end::Container-->
+					<!--begin::Separator-->
+					<div class="landing-dark-separator"></div>
+					<!--end::Separator-->
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Wrapper-->
+						<div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+							<!--begin::Copyright-->
+							<div class="d-flex align-items-center order-2 order-md-1">
+								<!--begin::Logo-->
+								<a href="#">
+									<img alt="Logo" src="assets/media/logos/afriquetec.png" class="h-35px h-md-35px" />
+								</a>
+								<!--end::Logo image-->
+								<!--begin::Logo image-->
+								<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" >© 2023 AFRIQUETEC.</span>
+								<!--end::Logo image-->
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
+								<li class="menu-item">
+									<a href="#how-it-works" data-kt-scroll-toggle="true"  class="menu-link px-2">A Propos</a>
+								</li>
+								<li class="menu-item mx-5">
+									<a href="formation.html"  class="menu-link px-2">Nos formations</a>
+								</li>
+							</ul>
+							<!--end::Menu-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Footer Section-->
+			<!--begin::Scrolltop-->
+			<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+				<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+				<span class="svg-icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
+						<path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
+					</svg>
+				</span>
+				<!--end::Svg Icon-->
+			</div>
+			<!--end::Scrolltop-->
+		</div>
+		<!--end::Root-->
+		<!--end::Main-->
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+			<span class="svg-icon">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
+					<path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
+				</svg>
+			</span>
+			<!--end::Svg Icon-->
+		</div>
+		<!--end::Scrolltop-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(used by all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Vendors Javascript(used by this page)-->
+		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+		<!--begin::Custom Javascript(used by this page)-->
+		<script src="assets/js/custom/landing.js"></script>
+		<script src="assets/js/custom/pages/pricing/general.js"></script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+        <script>
+            $(document).ready(function() {
+				KTThemeMode.setMode("light");
+            })
+        </script>
+	</body>
+	<!--end::Body-->
+</html>
